@@ -30,6 +30,7 @@ public:
     Rectangular_Prisim2(vec3 _f, double _length, double _width, double _depth, vec3 fill, vec3 border, Texture* tex = NULL);
     Rectangular_Prisim2(const Rectangular_Prisim2& orig);
     virtual ~Rectangular_Prisim2();
+	void setTexture(Texture*);
 
     // The draw function
     void draw(Shader*);
@@ -43,6 +44,8 @@ private:
     double length;
 	double width;
 	double depth;
+	
+	Texture* texture;
 
     // Colors
     vec3 fillColor;
