@@ -12,6 +12,7 @@ Rectangular_Prisim2::Rectangular_Prisim2() {
     assert(false && "Do not use default Rectangular_Prisim2 constructor.");
 }
 
+//where _f is the bottom left cornner
 Rectangular_Prisim2::Rectangular_Prisim2(vec3 _f, double _length, double _width, double _depth, vec3 fC, vec3 bC, Texture _tex) {
     fillColor = fC;
     borderColor = bC;
@@ -222,7 +223,7 @@ void rect_pris2_VertexArrayObject::draw(Shader* s)
     glBindVertexArray(rect_pris2_VertexArrayObject);
     s->useProgram();
     glDrawArrays(GL_TRIANGLES, 0, 36);
-    glBindVertexArray(0);    
+    glBindVertexArray(0);
 }
 
 /*
