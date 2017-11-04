@@ -5,6 +5,7 @@
  * Created on Ocotober 4, 2017
  *
  *  Recycled and revised/edidted StuetzleC's Cube
+ * Unit 7's lighting example
  */
 
 #ifndef RECTANGULAR_PRISIM2_H
@@ -31,16 +32,18 @@ public:
     Rectangular_Prisim2(const Rectangular_Prisim2& orig);
     virtual ~Rectangular_Prisim2();
 	void setTexture(Texture*);
-
+	
     // The draw function
     void draw(Shader*);
 
     //vec3 getEyeDirection(Camera*, int vertNum = 0 );
+	
 private:
 	void initalizeRemainingPoints(vec3 _f, double _length, double _width, double _depth);
 	
     Triangle* triangles[12];
     Vertex* vertices[8];
+	
     double length;
 	double width;
 	double depth;
