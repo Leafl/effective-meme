@@ -57,7 +57,6 @@ private:
     // Set up the vertex buffer object and vertex array object
     GLuint rect_pris2_VertexArrayObject;
     GLuint rect_pris2_VertexBufferObject;
-};
-
+}; 
 #endif /* RECTANGULAR_PRISIM2_H */
 
